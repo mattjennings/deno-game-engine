@@ -1,0 +1,3 @@
+[submodule "lib/engine/core"]
+	path = lib/engine/core
+	url = git@github.com:mattjennings/game-engine-core.git
