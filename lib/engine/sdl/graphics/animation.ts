@@ -1,9 +1,9 @@
 import type { Spritesheet } from "./spritesheet.ts"
-import type { Entity } from "../../core/entity.ts"
-import { Component } from "../../core/component.ts"
+import type { Entity } from "lib/engine/core/entity.ts"
+import { Component } from "lib/engine/core/component.ts"
 import { GraphicsComponent } from "./graphics.ts"
-import type { SystemEntities, SystemQuery } from "../../core/system.ts"
-import { System } from "../../core/system.ts"
+import type { SystemEntities, SystemQuery } from "lib/engine/core/system.ts"
+import { System } from "lib/engine/core/system.ts"
 
 export interface AnimationDefinition {
   // quads: Quad[]
@@ -41,7 +41,7 @@ export class AnimationComponent<Key extends string> extends Component<{
 
   override onAdd = (entity: Entity<any, any, any>) => {
     if (!entity.components.has(GraphicsComponent)) {
-      entity.addComponent(new GraphicsComponent())
+      // entity.addComponent(new GraphicsComponent())
     }
   }
 

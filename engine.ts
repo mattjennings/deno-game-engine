@@ -1,16 +1,16 @@
-import { SDL } from "SDL_ts";
+import { Pointer, SDL } from "SDL_ts";
 
 import {
   TransformComponent,
   VerletSystem,
-} from "lib/core/features/motion/index.ts";
-import { Engine } from "./lib/core/engine.ts";
+} from "lib/engine/core/motion/index.ts";
+import { Engine } from "./lib/engine/core/engine.ts";
 import {
   GraphicsComponent,
   GraphicsSystem,
-} from "./lib/sdl/graphics/graphics.ts";
+} from "./lib/engine/sdl/graphics/graphics.ts";
 
-export const engine = new Engine<string>({
+export const engine = new Engine<string, Pointer<SDL.Renderer>>({
   systems: [
     new VerletSystem(),
     new GraphicsSystem(),
