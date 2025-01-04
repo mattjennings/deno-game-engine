@@ -3,13 +3,13 @@ import {
   Surface,
   Texture,
 } from "https://jsr.io/@smack0007/sdl-ts/2.30.2/mod.SDL.ts";
-import { Component } from "lib/engine/core/component.ts";
-import { TransformComponent } from "lib/engine/core/motion/transform.ts";
-import type { SystemEntities, SystemQuery } from "lib/engine/core/system.ts";
-import { System } from "lib/engine/core/system.ts";
+import { Component } from "game-engine-core/component.ts";
+import { TransformComponent } from "game-engine-core/motion/transform.ts";
+import type { SystemEntities, SystemQuery } from "game-engine-core/system.ts";
+import { System } from "game-engine-core/system.ts";
 import { Pointer, SDL } from "SDL_ts";
-import { getRenderer } from "../../../../window.ts";
-import { AnyEntity } from "lib/engine/core/entity.ts";
+import { getRenderer } from "../../../window.ts";
+import { AnyEntity } from "game-engine-core/entity.ts";
 
 export class GraphicsComponent<
   T extends Record<string, any> = Record<string, any>,

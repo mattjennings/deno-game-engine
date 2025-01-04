@@ -1,9 +1,9 @@
 import type { Spritesheet } from "./spritesheet.ts"
-import type { Entity } from "lib/engine/core/entity.ts"
-import { Component } from "lib/engine/core/component.ts"
+import type { Entity } from "game-engine-core/entity.ts"
+import { Component } from "game-engine-core/component.ts"
 import { GraphicsComponent } from "./graphics.ts"
-import type { SystemEntities, SystemQuery } from "lib/engine/core/system.ts"
-import { System } from "lib/engine/core/system.ts"
+import type { SystemEntities, SystemQuery } from "game-engine-core/system.ts"
+import { System } from "game-engine-core/system.ts"
 
 export interface AnimationDefinition {
   // quads: Quad[]

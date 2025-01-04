@@ -3,12 +3,12 @@ import { Pointer, SDL } from "SDL_ts";
 import {
   TransformComponent,
   VerletSystem,
-} from "lib/engine/core/motion/index.ts";
-import { Engine } from "./lib/engine/core/engine.ts";
+} from "game-engine-core/motion/index.ts";
+import { Engine } from "game-engine-core/engine.ts";
 import {
   GraphicsComponent,
   GraphicsSystem,
-} from "./lib/engine/sdl/graphics/graphics.ts";
+} from "./lib/engine/graphics/graphics.ts";
 
 export const engine = new Engine<string, Pointer<SDL.Renderer>>({
   systems: [
