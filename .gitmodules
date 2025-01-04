@@ -1,3 +1,6 @@
 [submodule "lib/engine/core"]
-	path = lib/engine/core
+	path = modules/game-engine-core
 	url = git@github.com:mattjennings/game-engine-core.git
+[submodule "modules/SDL_ts"]
+	path = modules/SDL_ts
+	url = git@github.com:mattjennings/SDL_ts.git
