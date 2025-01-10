@@ -1,8 +1,7 @@
 import {
-  Renderer,
-  Surface,
+  Renderer,  
   Texture,
-} from "https://jsr.io/@smack0007/sdl-ts/2.30.2/mod.SDL.ts";
+} from "SDL_ts/SDL";
 import { Component } from "game-engine-core/component.ts";
 import { TransformComponent } from "game-engine-core/motion/transform.ts";
 import type { SystemEntities, SystemQuery } from "game-engine-core/system.ts";

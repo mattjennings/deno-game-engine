@@ -1,5 +1,6 @@
 import { SDL } from "SDL_ts";
-import { engine } from "./engine.ts";
+import { game } from "./game.ts";
+import './scenes/index.ts'
 import { SDL_FUNCTIONS } from "./sdlConfig.ts";
 import { getRenderer, getWindow } from "./window.ts";
 
@@ -7,7 +8,7 @@ SDL.Init(SDL.InitFlags.VIDEO, { functions: SDL_FUNCTIONS });
 let done = false;
 
 async function main() {
-  engine.start({ scene: "main" });
+  game.start({ scene: "main" });
   
   const event = new SDL.Event();
   
@@ -72,12 +73,12 @@ async function main() {
 
     const currentTime = SDL.GetTicks64();
 
-    engine.update(Number(currentTime));  
+    game.update(Number(currentTime));  
     
     SDL.SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL.RenderClear(renderer);
 
-    engine.draw(renderer);
+    game.draw(renderer);
     
     // because renderer uses vsync, this will block until the next frame
     // effectively our main update loop is synced to our screen hz

@@ -2,19 +2,12 @@
   "version": "4",
   "specifiers": {
     "jsr:@divy/sdl2@0.14": "0.14.0",
-    "jsr:@smack0007/sdl-ts@2.30.2": "2.30.2",
     "jsr:@std/path@1.0.1": "1.0.1",
     "npm:create-vite-extra@latest": "3.0.0"
   },
   "jsr": {
     "@divy/sdl2@0.14.0": {
       "integrity": "01347d34dd12cabd972eec340a142cdc6176f9e2720a72ab3515f73cf9d27bad"
-    },
-    "@smack0007/sdl-ts@2.30.2": {
-      "integrity": "bf64671726ccc16c97c48e19eb9d6a8a6aa68a8cd425acb02abb9b6d9f1d0ce0",
-      "dependencies": [
-        "jsr:@std/path"
-      ]
     },
     "@std/path@1.0.1": {
       "integrity": "e061ff02c28481ca49e3a14981875c345e9fc7e973190672782cd0ac8af70428"
@@ -51,7 +44,6 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@smack0007/sdl-ts@2.30.2",
       "jsr:@std/assert@1.0.0",
       "jsr:@std/fmt@0.225.6",
       "jsr:@std/path@1.0.1"
